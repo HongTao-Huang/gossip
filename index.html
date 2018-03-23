@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>八卦</title>
+    <style>
+        #gossip{
+            background-color: #eeeeee;
+            width: 640px;
+            height: 320px;
+            border: 1px solid black;
+            border-radius: 100%;
+            margin: 60px auto;
+            border-bottom-width:320px; 
+            position: relative;
+        }
+        #gossip::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -320px;
+            height: 80px;
+            width: 80px;
+            background-color: #eeeeee;
+            border: 120px solid #000;
+            border-radius: 50%;
+            
+        }
+        #gossip::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-right: -320px;
+            height: 80px;
+            width: 80px;
+            background-color: #000;
+            border: 120px solid #EEE;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="gossip"></div>
+</body>
+</html>
